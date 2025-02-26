@@ -58,7 +58,7 @@ jobs:
           static_site_generator: gatsby
           
       - name: Build with Gatsby
-        run: pnpm build
+        run: pnpm build --prefix-paths
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
